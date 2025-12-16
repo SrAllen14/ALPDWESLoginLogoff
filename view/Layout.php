@@ -14,18 +14,7 @@
         <div class="cabecera1">
             <h2>Log In - Log Off </h2>
         </div>
-        <div class="cabecera2">
-            <h2>Página de inicio</h2>
-        </div>
-        <div class="cabecera3">
-            
-        </div>
-    </header>
-    <main>
-        <div class="container">
-            <?php require_once $view[$_SESSION['paginaEnCurso']];?>
-        </div>
-    </main>
+        <?php require_once $view[$_SESSION['paginaEnCurso']];?>
     <footer>
         <div class="pie1">
             <a href="../index.html">Álvaro Allén Perlines</a>
