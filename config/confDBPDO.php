@@ -1,7 +1,11 @@
 <?php
 
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
- */
-
+    define('DSN', 'mysql:host='.$_SERVER['SERVER_ADDR'].'; dbname=DBALPDWESLoginLogoff');
+    define('USERNAME','userALPDWESLoginLogoff');
+    define('PASSWORD', 'paso');
+ /*
+    define('DSN', 'mysql:host=localhost; dbname=DBALPDWESLoginLogoffTema5');
+    define('USERNAME','userALPDWESLoginLogoffTema5');
+    define('PASSWORD', 'pasoDWES1234');
+  */
+?>
