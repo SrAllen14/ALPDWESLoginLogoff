@@ -11,8 +11,8 @@
     <div class="formulario">
         <form method="post" action="">
             <h1>Inicio de sesión</h1>
-            <input class="obligatorio" name="nombre" id="nombre" type="text" placeholder="Usuario..."><br><br>
-            <input class='obligatorio' name="pass" id="pass" type="password" placeholder="Contraseña..."><br><br>
+            <input class="obligatorio" name="codUsuario" id="nombre" type="text" placeholder="Usuario..."><br><br>
+            <input class='obligatorio' name="password" id="pass" type="password" placeholder="Contraseña..."><br><br>
             <button type="submit" name="iniciar" id="iniciar">Entrar</button>
             <button type="submit" name="registrar" id="registrar">Registrarse</button>
             <button type="submit" name="cancelar" id="cancelar">Cancelar</button>
