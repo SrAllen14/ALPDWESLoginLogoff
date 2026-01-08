@@ -7,16 +7,16 @@
 
 require_once __DIR__.'/../config/confDBPDO.php';
 class DBPDO{
-    public static function getConexion(){
-        $conexion = new PDO(DSN, USERNAME, PASSWORD);
-        $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        return $conexion;
-    }
-    
-    public static function ejecutaConsulta($sentenciaSQL, $conexion, $parametros){
-        $consulta = $conexion->prepare($sentenciaSQL);
-        $consulta-> execute($parametros);
-        $fila = $consulta->fetch();
-        return $fila;
+    public static function ejecutaConsulta($sentenciaSQL, $parametros){
+        try{
+            $conexion = new PDO(DSN, USERNAME, PASSWORD);
+            $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $consulta = $conexion->prepare($sentenciaSQL);
+            $consulta->execute($parametros);
+            
+            return $consulta;
+        } catch(PDOException $exPDO){
+            throw new Exception("Error BD: ".$exPDO->getMessage());
+        }
     }
 }
