@@ -18,8 +18,8 @@ class Usuario{
     
     public function __construct($codUsuario, $password, $descUsuario, $contadorAccesos, $fechaHoraUltimaConexion, $fechaHoraUltimaConexionAnterior, $perfil, $imagenUsuario){
         $this->codUsuario = $codUsuario;    
-        $this->descUsuario = $password;
-        $this->password = $descUsuario;
+        $this->descUsuario = $descUsuario;
+        $this->password = $password;
         $this->contadorAccesos = $contadorAccesos;
         $this->fechaHoraUltimaConexion = $fechaHoraUltimaConexion;
         $this->fechaHoraUltimaConexionAnterior = $fechaHoraUltimaConexionAnterior;

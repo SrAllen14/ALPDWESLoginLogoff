@@ -17,6 +17,8 @@
     </header>
     <main>
         <div class="container">
-            
+            <div class="image">
+                <img src="webroot/images/diagramaVentanas.PNG" alt="fasdf"/>
+            </div>
         </div>
     </main>

@@ -65,9 +65,9 @@
                 }
                 echo "</table>";
             ?>
-            <form>
-                <button type="submit" name="salir" id="salir">Salir</button>
-            </form>
         </div>
+        <form>
+            <button type="submit" name="salir" id="salir">Salir</button>
+        </form>
     </div>
 </main>

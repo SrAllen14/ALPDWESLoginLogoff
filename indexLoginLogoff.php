@@ -7,7 +7,11 @@
 // Incluir la configuración de la app y de la DB.
 require_once 'config/confAPP.php';
 require_once 'config/confDBPDO.php';
-    
+
+// Cargamos las clases.
+require_once 'model/Usuario.php';
+require_once 'model/UsuarioPDO.php';
+
 // Recuperar la sesión.
 session_start();
 

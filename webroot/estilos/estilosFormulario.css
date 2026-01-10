@@ -6,26 +6,49 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     Created on : 20 nov 2025, 16:24:49
     Author     : Clase
 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .formulario{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     background-color: #f7f5f5;
-    width: 33%;
-    padding: 40px;
+    align-items: center;
+}
+
+.formulario h1{
+    font-size: 28px;
+    font-weight: bold;
     text-align: center;
 }
 
-h1{
-    font-size: 28px;
-    font-weight: bold;
+@media(max-width: 480px){
+    .formulario{
+        max-width: 100%;
+        padding: 15px;
+    }
+    
+    .formulario{
+        font-size: 14px;
+        padding: 10px;
+    }
 }
 
 #nombre, #pass{
-    width: 70%;
-    padding: 10px;
+    width: 100%;
+    padding: 12px;
     margin-top: 20px;
     border: none;
     border-bottom: 1px solid #ccc;
-    font-size: 14px;
+    font-size: 16px;
     background-color: #FCF8CC;
 }
 
