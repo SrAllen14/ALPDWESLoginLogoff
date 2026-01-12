@@ -49,7 +49,6 @@ class UsuarioPDO{
                   $usuarioDB['T01_Perfil'],
                   $usuarioDB['T01_ImagenUsuario']);
         
-          self::actualizarUltimaConexionUsuario($oUsuario);
           if(is_null($oUsuario)){
               
           }

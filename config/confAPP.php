@@ -7,6 +7,10 @@
 
 require_once 'core/iValidacionFormularios.php';
 
+// Cargamos las clases.
+require_once 'model/Usuario.php';
+require_once 'model/UsuarioPDO.php';
+
 $controller = [
     'inicioPublico' => 'controller/cInicioPublico.php',
     'login' => 'controller/cLogin.php',
