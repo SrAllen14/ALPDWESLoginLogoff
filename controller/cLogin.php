@@ -29,10 +29,7 @@ if(isset($_REQUEST['iniciar'])){
     // Validar los campos del formulario.
     $aErrores['usuario'] = validacionFormularios::comprobarAlfaNumerico($_REQUEST['codUsuario'], 255, 0, 0);
     $aErrores['password'] = validacionFormularios::validarPassword($_REQUEST['password'], 20, 2, 1, 1);
-    
-    // Guardamos las respuestas una vez validadas.
-    
-    
+
     // Verificar si hay errores de validación.
     foreach ($aErrores as $valorCampo => $mensajeError){
         if($mensajeError != null){
