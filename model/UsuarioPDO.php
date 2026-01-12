@@ -81,6 +81,8 @@ class UsuarioPDO{
         // Establecer la nueva fecha de conexión.
         date_default_timezone_set('Europe/Madrid');
         $oUsuario->setFechaHoraUltimaConexion(new DateTime());
+        
+        return $oUsuario;
     }
     
     public static function altaUsuario(){
