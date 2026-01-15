@@ -17,7 +17,7 @@ USE DBALPDWESLoginLogoff;
 
 --Creamos, en caso de que no exista, la tabla y dentro cada campo con el tipo de valor correspondiente --
 CREATE TABLE IF NOT EXISTS T01_Usuario(
-    T01_CodUsuario VARCHAR(8) PRIMARY KEY,
+    T01_CodUsuario VARCHAR(16) PRIMARY KEY,
     T01_Password VARCHAR(255),
     T01_DescUsuario VARCHAR(255),
     T01_NumConexiones INT DEFAULT 0,

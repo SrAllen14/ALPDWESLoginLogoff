@@ -43,6 +43,8 @@
             ?>
             <form>
                 <button type="submit" name="detalles" id="detalles">Detalles</button>
+                <button type="submit" name="error" id="error">Error</button>
+                <button type="submit" name="wip" id="wip">Work In Progress</button>
             </form>
         </div>
     </div>

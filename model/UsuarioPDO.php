@@ -49,7 +49,6 @@ class UsuarioPDO{
                   $usuarioDB['T01_Perfil'],
                   $usuarioDB['T01_ImagenUsuario']);
         
-          self::actualizarUltimaConexionUsuario($oUsuario);
           if(is_null($oUsuario)){
               
           }
@@ -82,6 +81,8 @@ class UsuarioPDO{
         // Establecer la nueva fecha de conexión.
         date_default_timezone_set('Europe/Madrid');
         $oUsuario->setFechaHoraUltimaConexion(new DateTime());
+        
+        return $oUsuario;
     }
     
     public static function altaUsuario(){
