@@ -52,7 +52,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     background-color: #FCF8CC;
 }
 
-#iniciar, #registrar, #cancelar, #login, #detalles, #cerrarS, #salir{
+button{
     margin-top: 20px;
     background-color: #ffcc00;
     border: none;
